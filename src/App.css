@@ -59,3 +59,63 @@
 .icon__list img {
   padding: 10px;
 }
+
+.footer__section {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background: white;
+  border-top: 1px solid var(--button-hover);
+  height: auto;
+}
+
+#left__item {
+  margin-right: auto;
+  align-self: center;
+  font-size: 1.2em;
+  font-weight: 900;
+
+}
+
+#left__item span {
+  color: red;
+}
+
+#center__item {
+  color: #a1a5ad;
+  font-size: 0.8em;
+  margin: auto;
+  align-self: center;
+}
+
+#right__item {
+  margin-left: auto;
+  align-self: center;
+}
+
+@media screen and (max-width:760px) {
+
+  .footer__section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #left__item {
+    margin-left: auto;
+
+
+  }
+
+  #center__item {
+    margin-left: auto;
+
+  }
+
+  #right__item {
+    margin: auto;
+
+  }
+
+
+}

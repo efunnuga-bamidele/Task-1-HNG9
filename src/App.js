@@ -5,6 +5,7 @@ import './App.css';
 import ProfileImage from './assets/profile-img.jpeg'
 import Slack from './assets/icons8_slack_new.svg'
 import Github from './assets/icons8_github.svg'
+import FooterImg from './assets/footer-img.PNG'
 function App() {
   return (
     <div className="App">
@@ -23,7 +24,7 @@ function App() {
             href="https://twitter.com/BamideleEfunnu2"
             target="_blank"
           >
-            Twitter link
+            Twitter Link
           </a>
             <a
               className="App-link"
@@ -78,6 +79,12 @@ function App() {
           <img src={Github} id='slack' alt="github-icon" width='24' height='24'/>
         </a>
     </div>
+    <footer className='footer__section'>
+        <p id='left__item'>Zuri<span>.</span>Internship</p>
+        <p id='center__item'>HNG Internship 9 Frontend Task</p>
+        <img id='right__item' src={FooterImg} alt="footer-image" />
+
+    </footer>
     </div>
   );
 }
