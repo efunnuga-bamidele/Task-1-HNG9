@@ -51,3 +51,11 @@
 .App-link:hover {
   background: var(--button-hover);
 }
+
+.icon__list {
+  padding: 10px;
+}
+
+.icon__list img {
+  padding: 10px;
+}
