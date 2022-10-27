@@ -1,23 +1,18 @@
-
 import './App.css';
+import ProfileImage from './assets/profile-img.jpeg'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src='' className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img 
+          src={ProfileImage}
+          id="profile__img" 
+          alt="logo"
+         />
+        <h4>Bamidele Efunnuga</h4>     
       </header>
+      
     </div>
   );
 }
