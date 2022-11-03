@@ -9,10 +9,10 @@ const SocialLinks = () => {
     return (
         <div className='icon__list'>
             <a href="">
-            <img src={Slack} id='twitter' alt="slack-icon" width='24' height='24' />
+            <img src={Slack} id='twitter' alt="slack-icon" width='50' height='50' />
             </a>
             <a href="https://github.com/efunnuga-bamidele" target="_blank">
-            <img src={Github} id='slack' alt="github-icon" width='24' height='24'/>
+            <img src={Github} id='slack' alt="github-icon" width='50' height='50'/>
             </a>
         </div>
     )
