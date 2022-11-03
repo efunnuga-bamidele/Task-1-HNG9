@@ -48,14 +48,21 @@ const Navigation = () => {
                 Background Check for Coders
                 </a>
                 <a
-                className="App-link"
-                id='book__design'
-                href="https://books.zuri.team/design-rules"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Design Books
-            </a>
+                    className="App-link"
+                    id='book__design'
+                    href="https://books.zuri.team/design-rules"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    Design Books
+                </a>
+                <Link
+                    className="App-link"
+                    id='contact'
+                    to="/contact"
+                    >
+                    Contact Me
+                </Link>
                 
         </div>
 
