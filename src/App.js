@@ -1,3 +1,5 @@
+import { Routes, Route} from 'react-router-dom';
+
 //Styles
 import './App.css';
 
@@ -5,7 +7,11 @@ import './App.css';
 import ProfileImage from './assets/profile-img.jpeg'
 import Slack from './assets/icons8_slack_new.svg'
 import Github from './assets/icons8_github.svg'
-import FooterImg from './assets/footer-img.PNG'
+import Contact from './routes/contact/contact';
+
+//components
+import Footer from './components/footer/footer.component';
+
 function App() {
   return (
     <div className="App">
@@ -62,14 +68,17 @@ function App() {
               Background Check for Coders
             </a>
             <a
-            className="App-link"
-            id='book__design'
-            href="https://books.zuri.team/design-rules"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+              className="App-link"
+              id='book__design'
+              href="https://books.zuri.team/design-rules"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             Design Books
           </a>
+            <Routes>
+              <Route path='/' element={<Contact />} />
+            </Routes> 
       </div>
       <div className='icon__list'>
         <a href="">
@@ -79,12 +88,7 @@ function App() {
           <img src={Github} id='slack' alt="github-icon" width='24' height='24'/>
         </a>
     </div>
-    <footer className='footer__section'>
-        <p id='left__item'>Zuri<span>.</span>Internship</p>
-        <p id='center__item'>HNG Internship 9 Frontend Task</p>
-        <img id='right__item' src={FooterImg} alt="footer-image" />
-
-    </footer>
+      <Footer />
     </div>
   );
 }
