@@ -11,7 +11,7 @@ const SocialLinks = () => {
             <a href="">
             <img src={Slack} id='twitter' alt="slack-icon" width='50' height='50' />
             </a>
-            <a href="https://github.com/efunnuga-bamidele" target="_blank">
+            <a href="https://github.com/efunnuga-bamidele">
             <img src={Github} id='slack' alt="github-icon" width='50' height='50'/>
             </a>
         </div>
