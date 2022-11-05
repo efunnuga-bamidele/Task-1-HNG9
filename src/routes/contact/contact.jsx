@@ -2,6 +2,7 @@
 import './contact.styles.css';
 
 const Contact = () => {
+    const name = "ebamidele"
     return(
         <div className='contact__form'>
             <form className='row g-3'>
@@ -10,22 +11,22 @@ const Contact = () => {
                 
                 <div className="col-md-6">
                     <label className='form-label'>First name</label>
-                    <input className='form-control' type="text" id='first_name' placeholder='Enter your first name'/>
+                    <input className='form-control' type="text" id='first_name' placeholder='Enter your first name' required />
                 </div>  
                 <div className="col-md-6">
                     <label className='form-label'>Last name</label>
-                    <input className='form-control' type="text" id='last_name' placeholder='Enter your last name'/> 
+                    <input className='form-control' type="text" id='last_name' placeholder='Enter your last name' required /> 
                 </div>
             
 
                 <div className="col-md-12">
                     <label className='form-label'>Email</label>
-                    <input className='form-control' type="email" id='email' placeholder='yourname@email.com'/>
+                    <input className='form-control' type="email" id='email' placeholder='yourname@email.com' required />
                     
                 </div>
                 <div className="form-group">
                     <label className='form-label'>Message</label>
-                    <textarea className='form-control' id="message" cols="30" rows="6" placeholder="Send me a message and I'll reply you as soon as possible"></textarea>
+                    <textarea className='form-control' id="message" cols="30" rows="6" placeholder="Send me a message and I'll reply you as soon as possible" required ></textarea>
                     
                 </div>
                 <div className="row mb-3 mt-3">
@@ -33,7 +34,7 @@ const Contact = () => {
                     <div className="form-check">
                         <input className="form-check-input" type="checkbox" id="check_box" />
                         <label className="form-check-label" >
-                            You agree to provide your data to name who may contact you
+                            You agree to provide your data to {name} who may contact you
                         </label>
                     </div>
                     </div>
